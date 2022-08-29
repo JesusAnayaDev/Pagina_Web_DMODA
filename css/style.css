@@ -1,0 +1,75 @@
+:root {
+    --color-dark: #111;
+    --color-light: #fff;
+    --color-gold: rgb(206, 206, 206);
+}
+
+.fondos_login {
+    font-family: icon-user;
+    font-weight: 200;
+    background: linear-gradient(to bottom, darkcyan, rgb(0, 78, 97));
+
+}
+
+.card-header {
+    background-color: #fff;
+}
+
+.boton {
+    background-color: rgb(5, 89, 110);
+}
+
+.salir {
+    color: rgb(2, 71, 88); 
+    text-align: center;
+}
+
+.formulario {
+    background-color:#fff;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+h3 span {
+    font-size: 60px;
+}
+
+
+:root {
+    --yellow-color: #F7DF1E;
+    --dark-color: #222;
+}
+
+.card {
+    display: inline-block;
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+.card figcaption {
+    padding: 1rem;
+}
+
+.rotate-45 {
+    transform: rotate(45deg);
+}
+
+.rotate-135 {
+    transform: rotate(135deg);
+}
+
+.opacity-80 {
+    opacity: .8;
+}
+
+.sepia {
+    filter: sepia(1);
+}
+
+
+
+
