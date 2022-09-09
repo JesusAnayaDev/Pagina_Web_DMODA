@@ -1,75 +1,216 @@
 :root {
-    --color-dark: #111;
-    --color-light: #fff;
-    --color-gold: rgb(206, 206, 206);
+  --color-dark: #111;
+  --color-light: #fff;
+  --color-gold: rgb(206, 206, 206);
 }
 
-.fondos_login {
-    font-family: icon-user;
-    font-weight: 200;
-    background: linear-gradient(to bottom, darkcyan, rgb(0, 78, 97));
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header {
+  position: sticky;
+  background: linear-gradient(to bottom, rgb(123, 211, 211), rgb(255, 255, 255));
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navegador {
+  display: flex;
+  justify-content: space-between;
+}
+
+.enlaces {
+  margin: 0 auto;
+  position: center;
+  padding: 5px;
+}
+
+.enlaces.is-active {
+  left: 0;
+}
+
+.logo {
+  position: absolute;
+  text-align: left;
+  padding: 20px 30px;
+  float: left;
+  margin-left: 60px;
+  font-weight: bold;
+  font-size: 35px;
+  left: 20px;
+  text-decoration: none;
+}
+
+nav ul {
+  margin-bottom: 0;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  color: rgb(255, 255, 255);
+}
+
+nav ul li a {
+  color: darkcyan;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 20px;
+}
+
+nav ul li a:hover{
+    transition: .2s;
+    color: rgb(145, 145, 145);
+    text-decoration: underline;
+}
+
+
+.my-2 {
+  background-color: darkcyan;
+}
+
+.btncolor {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(to bottom, rgb(225, 241, 241), rgb(123, 211, 211));
+}
+
+.btncolor:hover {
+    color: rgb(123, 211, 211);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(207, 207, 207));
+}
+  
+.btn-config {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 999;
+  bottom: 1vh;
+  right: 1vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(123, 211, 211));
+}
+
+@media (max-width: 952px){
+  .logo{
+    padding-left: 20px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  
+}
+
+@media (max-width: 858px){
+  .btn-config{
+    display: block;
+  }
+  
+  ul{
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(123, 211, 211));
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  .logo {
+    position: inherit;
+    margin-left: 0;
+  }
+
+  
 }
 
 .card-header {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 .boton {
-    background-color: rgb(5, 89, 110);
+  background-color: rgb(5, 89, 110);
 }
 
 .salir {
-    color: rgb(2, 71, 88); 
-    text-align: center;
+  color: rgb(2, 71, 88);
+  text-align: center;
 }
 
 .formulario {
-    background-color:#fff;
-
+  background-color: #fff;
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 h3 span {
-    font-size: 60px;
-}
-
-
-:root {
-    --yellow-color: #F7DF1E;
-    --dark-color: #222;
+  font-size: 60px;
 }
 
 .card {
-    display: inline-block;
-    background-color: var(--dark-color);
-    color: var(--yellow-color);
+  display: inline-block;
+  background-color: var(--dark-color);
+  color: var(--yellow-color);
 }
 
 .card figcaption {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .rotate-45 {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .rotate-135 {
-    transform: rotate(135deg);
+  transform: rotate(135deg);
 }
 
 .opacity-80 {
-    opacity: .8;
+  opacity: 0.8;
 }
 
 .sepia {
-    filter: sepia(1);
+  filter: sepia(1);
 }
 
-
-
-
+.fondos_login {
+  font-family: icon-user;
+  font-weight: 200;
+  background: linear-gradient(to bottom, rgb(123, 211, 211), rgb(255, 255, 255));
+}

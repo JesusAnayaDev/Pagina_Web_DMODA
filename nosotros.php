@@ -1,5 +1,4 @@
 <?php include("template/cabecera.php"); ?>
-<link rel="stylesheet" type="text/css" href="/css/estilo.css">
 <div class="jumbotron">
     <h1 class="display-3">Nosotros</h1>
     <p class="lead">Hola Somos D' Moda</p>
