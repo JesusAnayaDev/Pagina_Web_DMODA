@@ -41,6 +41,7 @@ img {
 
 .enlaces.is-active {
   left: 0;
+  opacity: 1;
 }
 
 .logo {
@@ -110,6 +111,38 @@ nav ul li a:hover{
   background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(123, 211, 211));
 }
 
+.hamburger-box {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+}
+
+
+.reloj {
+  display: flex;
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 998;
+  bottom: 1vh;
+  left: 1vw;
+  width: 12rem;
+  height: 2rem;
+  padding: 0;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(123, 211, 211));
+  border-radius: 5px;
+  box-shadow: -8px -8px 15px rgb(145, 223, 223);       
+}
+
+.relojDigital {
+  font-family: 'Times New Roman', Times, serif;
+  padding-top: 5px;
+  font-size: 25px;
+}
+
 @media (max-width: 952px){
   .logo{
     padding-left: 20px;
@@ -137,6 +170,7 @@ nav ul li a:hover{
     left: -100%;
     text-align: center;
     transition: all .5s;
+    opacity: 0;
   }
 
   nav ul li {
@@ -155,42 +189,6 @@ nav ul li a:hover{
   }
 
   
-}
-
-.card-header {
-  background-color: #fff;
-}
-
-.boton {
-  background-color: rgb(5, 89, 110);
-}
-
-.salir {
-  color: rgb(2, 71, 88);
-  text-align: center;
-}
-
-.formulario {
-  background-color: #fff;
-}
-
-.container {
-  width: 100%;
-  height: 100vh;
-}
-
-h3 span {
-  font-size: 60px;
-}
-
-.card {
-  display: inline-block;
-  background-color: var(--dark-color);
-  color: var(--yellow-color);
-}
-
-.card figcaption {
-  padding: 1rem;
 }
 
 .rotate-45 {

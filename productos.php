@@ -33,9 +33,4 @@ $numeroDeRopa="numeroDeRopa++";
     
 <?php } ?>
 
-
-
-
-
-
 <?php include("template/pie.php"); ?>
