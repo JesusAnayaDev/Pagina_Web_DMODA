@@ -79,7 +79,7 @@ if (!empty($_POST['user']) && !empty($_POST['password'])) {
                 <br>
                 <br>
 
-            <div class="card formulario">
+            <div class="formulario">
                 <div class="card-header text-info salir">
                     <h3 ><span class="icon-user"></span> Iniciar Sesion</h3>
                 </div>

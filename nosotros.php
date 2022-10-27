@@ -10,7 +10,7 @@
         Ingrese sus datos
     </div>
 
-    <form method="POST" >
+    <form method="POST" dark-btn>
     <div class="card-body">
         <input type="text" placeholder="name" name="name" required="">
     </div>

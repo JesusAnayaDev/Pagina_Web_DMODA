@@ -2,35 +2,32 @@
 
 <?php include("administrador/config/bd.php");
 
-$sentenciaSQL=$conexion->prepare("SELECT * FROM ropa");
+$sentenciaSQL = $conexion->prepare("SELECT * FROM ropa");
 $sentenciaSQL->execute();
-$listaropa=$sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
+$listaropa = $sentenciaSQL->fetchAll(PDO::FETCH_ASSOC);
 
 ?>
 
+<div class="organizacion">
+        <?php foreach ($listaropa as $ropa) { ?>
+                        <article class="cards">
+                                <figure class="card" dark-btn>
 
-<?php foreach ($listaropa as $ropa) { ?>
-<div class="col-md-3">
+                                        <img src="./img/<?php echo $ropa['imagen']; ?> " alt="">
 
-<div class="card">
+                                        <figcaption><?php echo $ropa['marca']; ?> </figcaption>
+                                        <a name="" id="" class="btn btn-primary" href="caracteristicas.php" role="button">Ver más</a>
+                                </figure>
+                        </article>
+                <?php
+                $numeroDeRopa = 0;
+                $numeroDeRopa = "numeroDeRopa++";
 
-    <img class="card-img-top" src="./img/<?php echo $ropa['imagen']; ?> " alt="">
+                ?>
 
-    <div class="card-body">
-        <h4 class="card-title"><?php echo $ropa['marca']; ?> </h4>
-        <a name="" id="" class="btn btn-primary" href="caracteristicas.php" role="button">Ver más</a>
-    </div>
 
+
+        <?php } ?>
 </div>
-
-<?php 
-$numeroDeRopa=0;
-$numeroDeRopa="numeroDeRopa++"; 
-
-?>
-
-</div>
-    
-<?php } ?>
 
 <?php include("template/pie.php"); ?>

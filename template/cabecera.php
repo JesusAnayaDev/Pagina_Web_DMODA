@@ -1,6 +1,6 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-dark>
 
 <head>
     <meta charset="UTF-8">
@@ -9,17 +9,17 @@
     <title>D' Moda</title>
 
 
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
-    <header class="header">
+<body data-dark>
+    <header class="header" data-dark>
             <nav class="navegador">
                 <a class="logo" href="index.php">D' Moda </a>
-                <div>
-                    <ul class="enlaces">
+                <div class="caja-menu-mobil">
+                    <ul class="enlaces" data-dark>
                         <li>
                             <a href="index.php">Inicio</a>
                         </li>
@@ -47,19 +47,22 @@
                             <?php } ?>
                     </ul>
                 </div>
+                <div class="centrar">
+                    <input type="search" placeholder="Search..." class="card-filter" dark-btn>
+                    <a href="" class="boton" dark-btn>🔍</a>
+                </div>
             </nav>
     </header>
 
 
-    <button class="btn-config hamburger hamburger--emphatic" type="button">
+    <button dark-btn class="btn-config hamburger--emphatic" type="button">
         <span class="hamburger-box">
             <span class="alinear hamburger-inner"></span>
         </span>
     </button>
 
-    <div id="reloj" class="reloj">Reloj Digital</div>
+    <button dark-btn class="scroll-top-btn hidden"> &#8593; </button>
 
-    <div class="container">
-        <br>
+    <button dark-btn class="dark-theme-btn"> 🌙 </button>
 
-        <div class="row">
+    <div dark-btn id="reloj" class="reloj">Reloj Digital</div>

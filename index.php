@@ -1,13 +1,16 @@
 
 <?php include("template/cabecera.php"); ?>
-                <div>
-                    <h1 class="display-3">Bienvenidos A D' Moda</h1>
+                <div class="box">
+                    <h1>Bienvenidos A D' Moda</h1>
                     <p class="lead">Aqui podras encontrar esa prenda que tanto necesitas</p>
-                    <hr class="my-2">
+                    <hr class="barra">
+
 
                     <img width="400" height="300" src="img/imagen-ropa.png" class="img-tumbnail rounded">
                     <p class="lead">Mas Informacion</p>
                     <p class="lead">
-                        <a class="btn btn-lg btncolor" href="productos.php" role="button">Ver Ropa</a>
+                        <a class="btn btn-lg btncolor" dark-btn href="productos.php" role="button">Ver Ropa</a>
                     </p>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <?php include("template/pie.php"); ?>
