@@ -15,7 +15,7 @@
 /* Menu */
 .header {
   position: sticky;
-  background: linear-gradient(to bottom, rgb(123, 211, 211), rgb(255, 255, 255));
+  background: #fff;
   top: 0;
   display: flex;
   justify-content: center;
@@ -23,6 +23,7 @@
   margin: 0 auto;
   z-index: 999;
   margin-bottom: 20px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.514);
 }
 
 .navegador {
@@ -53,11 +54,11 @@
   font-size: 35px;
   left: 20px;
   text-decoration: none;
-  color: darkcyan;
+  color: #111;
 }
 
 .logo:hover {
-  color: rgb(145, 145, 145);;
+  color: darkcyan;
 }
 
 nav ul {
@@ -72,7 +73,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: darkcyan;
+  color: #111;
   font-weight: bold;
   text-decoration: none;
   font-size: 20px;
@@ -81,7 +82,7 @@ nav ul li a {
 
 nav ul li a:hover{
     transition: .2s;
-    color: rgb(145, 145, 145);
+    color: darkcyan;
     text-decoration: underline;
 }
 
@@ -108,7 +109,7 @@ nav ul li a:hover{
   border: none;
   outline: none;
   width: 0;
-  background: linear-gradient(to bottom, rgb(123, 211, 211), rgb(255, 255, 255));
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(207, 207, 207));
   transition: .3s;
 }
 
@@ -136,7 +137,7 @@ nav ul li a:hover{
   right: 10px;
   color: darkcyan;
   border-radius: 40px;
-  background: linear-gradient(to bottom, rgb(123, 211, 211), rgb(255, 255, 255));
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(207, 207, 207));
   text-decoration: none;
 }
 
@@ -149,7 +150,7 @@ nav ul li a:hover{
   justify-items: center;
   align-items: center;
   font-size: 20px;
-  color: darkcyan;
+  color: #111;
 }
 
 .box img {
@@ -158,7 +159,7 @@ nav ul li a:hover{
 }
 
 .lead {
-  color: darkcyan;
+  color: #111;
   margin: 10px;
 }
 
@@ -185,8 +186,9 @@ img {
   padding: 10px;
   margin: 10px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
-  background: linear-gradient(to bottom, rgb(225, 241, 241), rgb(123, 211, 211));
+  color: #111;
+  background: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.514);
 }
 
 .btncolor:hover {
@@ -209,8 +211,9 @@ img {
   width: 11rem;
   height: 2rem;
   padding: 0;
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(123, 211, 211));
-  border-radius: 5px;     
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.514);     
 }
 
 .relojDigital {
@@ -234,12 +237,13 @@ img {
   height: 4rem;
   border-radius: 50%;
   padding: 0;
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(123, 211, 211));
+  background: #fff;
   outline: 0;
   border: 0;
   opacity: 0;
   transition: all 0.3s ease-out;
   cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.514);
 }
 
 .btn-config:hover{
@@ -270,11 +274,12 @@ img {
   border-radius: 50%;
   font-size: 3.5rem;
   font-weight: bold;
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(123, 211, 211));
+  background: #fff;
   cursor: pointer;
   outline: 0;
   border: 0;
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.514);
 }
 
 .scroll-top-btn:hover {
@@ -309,11 +314,11 @@ img {
 
 .card {
   color: #111;
-  background: linear-gradient(to bottom, rgb(255, 255, 255) 75%, rgb(123, 211, 211));
+  background: #fff;
   border-radius: 4%;
   text-align: center;
   justify-content: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Times New Roman', Times, serif;
   position: relative;
   overflow: hidden;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.514);
@@ -349,6 +354,8 @@ img {
 
 .card figcaption {
   padding: 1rem;
+  text-align: left;
+  color: #111;
 }
 
 .card a {
@@ -382,7 +389,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  z-index: 998;
   bottom: 1vh;
   left:1vw;
   width: 4rem;
@@ -391,11 +398,12 @@ img {
   border-radius: 50%;
   font-size: 2rem;
   font-weight: bold;
-  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(123, 211, 211));
+  background:#fff;
   cursor: pointer;
   outline: 0;
   border: 0;
   transition: all 0.5s ease-out;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.514);
 }
 
 .dark-theme-btn:hover {
@@ -406,6 +414,11 @@ img {
 .dark-mode {
   background: #111;
   color: darkcyan;
+}
+
+
+.dark-mode *{
+  color: #fff;
 }
 
 .dark-mode-btn {
@@ -450,7 +463,7 @@ img {
     overflow: auto;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(123, 211, 211));
+    background: #fff;
     top: 80px;
     left: -100%;
     text-align: center;

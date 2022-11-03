@@ -27,7 +27,7 @@
                             <a href="productos.php">Ropa</a>
                         </li>
                         <li>
-                            <a c href="nosotros.php">Nosotros</a>
+                            <a  href="nosotros.php">Nosotros</a>
                         </li>
 
                         <?php if (isset($_SESSION['user_id'])) { ?>

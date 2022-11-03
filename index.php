@@ -6,7 +6,7 @@
                     <hr class="barra">
 
 
-                    <img width="400" height="300" src="img/imagen-ropa.png" class="img-tumbnail rounded">
+                    <img width="400" height="300" src="img/imagen-grande.png" class="img-tumbnail rounded">
                     <p class="lead">Mas Informacion</p>
                     <p class="lead">
                         <a class="btn btn-lg btncolor" dark-btn href="productos.php" role="button">Ver Ropa</a>
