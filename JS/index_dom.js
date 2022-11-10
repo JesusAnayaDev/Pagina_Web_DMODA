@@ -3,6 +3,7 @@ import { digitalClock } from "./reloj.js";
 import scrollTopButton from "./boton_scroll.js";
 import darkTheme from "./tema_dark.js";
 import searchFilters from "./filtro_busquedas.js";
+import slider from "./carrusel.js";
 
 const d = document;
 
@@ -11,6 +12,7 @@ d.addEventListener("DOMContentLoaded", e=> {
     digitalClock(".reloj", ".relojDigital");
     scrollTopButton(".scroll-top-btn");
     searchFilters(".card-filter", ".cards");
+    slider();
 })
 
 darkTheme(".dark-theme-btn", "dark-mode", "dark-mode-btn");

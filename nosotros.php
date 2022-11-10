@@ -5,57 +5,25 @@
     <hr class="my-2">
 </div>
 
-<div class="col-md-4 tamaño"> 
-    <div class="card-header bg-success text-white">
+<div class="fondo"> 
+    <div>
         Ingrese sus datos
     </div>
 
-    <form method="POST" dark-btn>
-    <div class="card-body">
-        <input type="text" placeholder="name" name="name" required="">
-    </div>
-        
-    <div class="card-body"> 
-    <input type="email" placeholder="email" name="email" required="">
-    </div>
-        
-    <div class="card-body">
-        <input type="text" placeholder="asunto" name="asunto" required="">
-    </div>    
-        
-    <div class="card-body">
-        <textarea placeholder="mesnaje" name="msg"></textarea>
-    </div>
-    <style>
+    <form method="POST" class="contact-form">
+        <legend>Envianos tus comentarios</legend>
+        <input type="text" name="name" placeholder="Name" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre sólo acepta letras y espacios en blanco" required>
+        <input type="email" name="email" placeholder="Email" title="Email Incorrecto" pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$" required>
+        <input type="text" name="subject" placeholder="Asunto" title="Ingrsaa tu asunto" required>
+        <textarea name="commenst" cols="50" rows="7" placeholder="Escribe tu mensaje" data-pattern="^.{1,255}$" required title="No exceder los 255 caracteres"></textarea>
+        <input type="submit">
 
-        form{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #ededed;
-        }
-
-        textarea{
-
-            max-height: 400px;
-            width: 300px;
-            border: none;
-            min-height: 100px;
-        }
-
-        input{
-            width: 300px;
-            border: none;
-        }
-
-        .tamaño{
-            min-width: 400px;
-        }
-
-
-    </style>
-    <div class="card-body">
-        <input type="submit" class="btn btn-success" name="enviar">
-    </div>
-
+        <div class="contact-form-loader none">
+            <img src="./assets/svg-loaders/audio.svg" alt="Cargando">
+        </div>
+        <div class="contact-form-response none">
+            <p>Los datos han sido enviados</p>
+        </div>
     </form>
 
 </div>

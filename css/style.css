@@ -149,6 +149,7 @@ nav ul li a:hover{
   font-family: 'Times New Roman', Times, serif;
   justify-items: center;
   align-items: center;
+  text-align: center;
   font-size: 20px;
   color: #111;
 }
@@ -178,6 +179,84 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* Responsive Slider */
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.slider-slides {
+  position: relative;
+  height: 500px;
+}
+
+.slider-slide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 800ms ease-in;
+}
+
+.slider-slide img {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+
+.slider-slide.active_right {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider-slide.active_left {
+  opacity: 1;
+  visibility: visible;
+}
+
+.slider-btns {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.slider a {
+  display: flex;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  padding-bottom: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+  background: #fff;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.514);
+  align-items: center;
+  text-align: center;
+}
+
+.slider a:hover {
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(207, 207, 207));
+}
+
 
 /* Boton ver ropa */
 
@@ -375,10 +454,96 @@ img {
 }
 
 .filter {
-  /* display: none; */
   visibility: hidden;
   opacity: 0;
   order: 1;
+}
+
+/* Formulario */
+
+.fondo {
+
+  margin: 20px 20%;
+  padding-bottom: 40px;
+  border-radius: 20px;
+}
+
+.contact-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.contact-form > * {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 60%;
+  border-radius: 20px;
+}
+
+.contact-form textarea{
+  resize: none;
+}
+
+.contact-form legend, .contact-form-response {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-form input, .contact-form textarea {
+  font-size: 1rem;
+  font-family: sans-serif;
+  color: #111;
+}
+
+.contact-form input[type="submit"] {
+  width: 50%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* .contact-form *::placeholder {
+  color: rgba(0, 139, 139, 0.555);
+} */
+
+.contact-form [required]:valid{
+  color: darkcyan;
+}
+
+.contact-form [required]:invalid{
+  color: rgb(194, 0, 0);
+}
+
+.contact-form-error {
+  margin-top: -1rem;
+  font-size: 80%;
+  background: rgb(194, 0, 0);
+  color: #fff;
+  transition: all 800ms ease;
+}
+
+.contact-form-error.is-active {
+  display: block;
+  animation: show-message 1s 1 normal ease-out both;
+}
+
+.none {
+  display: none;
+}
+
+@keyframes show-message {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 
