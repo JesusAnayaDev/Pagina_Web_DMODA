@@ -4,6 +4,7 @@ import scrollTopButton from "./boton_scroll.js";
 import darkTheme from "./tema_dark.js";
 import searchFilters from "./filtro_busquedas.js";
 import slider from "./carrusel.js";
+import contactFormValidations from "./validaciones_form.js";
 
 const d = document;
 
@@ -13,6 +14,7 @@ d.addEventListener("DOMContentLoaded", e=> {
     scrollTopButton(".scroll-top-btn");
     searchFilters(".card-filter", ".cards");
     slider();
+    contactFormValidations();
 })
 
 darkTheme(".dark-theme-btn", "dark-mode", "dark-mode-btn");

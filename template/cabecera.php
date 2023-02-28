@@ -49,7 +49,7 @@
                 </div>
                 <div class="centrar">
                     <input type="search" placeholder="Search..." class="card-filter" dark-btn>
-                    <a href="" class="boton" dark-btn>🔍</a>
+                    <a href="./productos.php" class="boton" dark-btn>🔍</a>
                 </div>
             </nav>
     </header>
